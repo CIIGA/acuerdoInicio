@@ -151,7 +151,7 @@
                              <td style="text-align:center;">
                                  <form action="" method="post">
                                      &nbsp;
-                                     <a href="form?cta=<?php echo $array_datos['Cuenta'] ?>" class="btn btn-outline-dark btn-sm" style="padding:0%;border:0px;" data-toggle="tooltip" data-placement="right" title="Formato Acuerdo de Inicio"><img src="https://img.icons8.com/fluency/30/000000/general-ledger.png" />Acuerdo Inicio&nbsp;</a>
+                                     <a href="form.php?cta=<?php echo $array_datos['Cuenta'] ?>" class="btn btn-outline-dark btn-sm" style="padding:0%;border:0px;" data-toggle="tooltip" data-placement="right" title="Formato Acuerdo de Inicio"><img src="https://img.icons8.com/fluency/30/000000/general-ledger.png" />Acuerdo Inicio&nbsp;</a>
 
                                      <!-- si la cunsulta pdf trae algo entonses muestra el boton del pdf generado -->
                                      <?php if (isset($pdf)) { ?>

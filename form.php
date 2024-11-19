@@ -20,7 +20,7 @@ if (isset($_SESSION['user'])) {
             $datos = sqlsrv_fetch_array($dat);
         } else {
             $da = "select top 1 Propietario as nombre,SerieMedidor as medidor,
-        concat('CALLE ',Calle,' #',NumExt,' COLONIA ',Colonia,' ',Poblacion) as domicilio
+        concat('CALLE ',Calle,' #',NumExt,' COLONIA ',Colonia,' TECATE') as domicilio
         from implementta where cuenta='$cuenta'";
             $dat = sqlsrv_query($cnx, $da);
             $datos = sqlsrv_fetch_array($dat);
@@ -230,7 +230,7 @@ if (isset($_SESSION['user'])) {
                                             <a href="javascript:history.back(-1);" class="btn btn-dark btn-sm"><img src="https://img.icons8.com/fluency/30/null/cancel.png" />
                                                 Cancelar</a>
                                             <button type="submit" target="_blank" class="btn btn-primary btn-sm"><img src="https://img.icons8.com/fluency/30/null/pdf.png" />
-                                                Generar Determinación</button>
+                                                Generar Formato</button>
                                         </div>
                                     </div>
                                 </div>
